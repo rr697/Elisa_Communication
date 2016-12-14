@@ -26,6 +26,7 @@ void demoComm() {
 					case 0:
 						irCommInit();
 						enableObstacleAvoidance();
+						//getMap();
 						setLeftSpeed(10);
 						setRightSpeed(10);
 						demoState = 1;
@@ -49,6 +50,8 @@ void demoComm() {
 							}
 						}
 						if(irCommDataAvailable()==1) {
+						    setLeftSpeed(0);
+							setRightSpeed(0);
 							irCommReadData();
 							if(i<7) {
 								i++;
@@ -105,14 +108,7 @@ void demoComm() {
 				break;
 	disableObstacleAvoidance();
     disableCliffAvoidance();
-			GREEN_LED0_OFF;
-			GREEN_LED1_OFF;
-			GREEN_LED2_OFF;
-			GREEN_LED3_OFF;
-			GREEN_LED4_OFF;
-			GREEN_LED5_OFF;
-			GREEN_LED6_OFF;
-			GREEN_LED7_OFF;
+		
 			pwm_red = 255;
 			pwm_green = 255;
 			pwm_blue = 255;

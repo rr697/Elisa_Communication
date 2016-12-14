@@ -18,7 +18,7 @@ void demoComm() {
     handleRFCommands();
     unsigned int i=0;
 	unsigned int currRand=0, currRand2=0;
-    //float targetAngle=0;
+
 
 	while (1) {
 
@@ -106,8 +106,8 @@ void demoComm() {
 						break;
 				}
 				break;
-	disableObstacleAvoidance();
-    disableCliffAvoidance();
+			disableObstacleAvoidance();
+    		disableCliffAvoidance();
 		
 			pwm_red = 255;
 			pwm_green = 255;
@@ -120,7 +120,7 @@ void demoComm() {
 			rgbState = 0;
 			calibrationWritten = 0;
 			demoState = 0;
-
+					
 			irCommState = 0;
 }
 	handleMotorsWithSpeedController();  

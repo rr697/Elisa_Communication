@@ -24913,7 +24913,7 @@ void demoComm() {
     handleRFCommands();
     9e98:	0e 94 40 03 	call	0x680	; 0x680 <handleRFCommands>
 	unsigned int currRand=0, currRand2=0;
-    //float targetAngle=0;
+
 
 	while (1) {
 
@@ -24927,7 +24927,7 @@ void demoComm() {
     9eaa:	e9 f0       	breq	.+58     	; 0x9ee6 <demoComm+0x5a>
 			calibrationWritten = 0;
 			demoState = 0;
-
+					
 			irCommState = 0;
 }
 	handleMotorsWithSpeedController();  
@@ -24955,7 +24955,7 @@ void demoComm() {
     9ec8:	80 93 74 04 	sts	0x0474, r24
 			calibrationWritten = 0;
 			demoState = 0;
-
+					
 			irCommState = 0;
 }
 	handleMotorsWithSpeedController();  
@@ -24976,7 +24976,7 @@ void demoComm() {
     9edc:	80 93 74 04 	sts	0x0474, r24
 			calibrationWritten = 0;
 			demoState = 0;
-
+					
 			irCommState = 0;
 }
 	handleMotorsWithSpeedController();  

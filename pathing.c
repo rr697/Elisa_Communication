@@ -10,8 +10,8 @@
                         	
 int myArray[cols][rows] = { 	{0, 0, 0, 2},
                         		{0, 0, 0, 0},
-                        		{0, 1, 0, 0},
-                        		{1, 0, 0, 3}  };							
+                        		{0, 0, 0, 0},
+                        		{0, 0, 0, 3}  };							
 
 void getMap() {
     
@@ -40,7 +40,7 @@ void getMap() {
 				{
 	    			
 							    
-			        turnLeft();
+			        turn180();
 					moveForward(1);
 					GREEN_LED3_ON;										
 								

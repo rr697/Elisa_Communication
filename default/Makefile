@@ -40,7 +40,7 @@ HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0 --no-change-warnings
 LIBS = -lm 
 
 ## Objects that must be built in order to link
-OBJECTS = main.o spi.o mirf.o ir_remote_control.o speed_control.o variables.o ports_io.o twimaster.o usart.o utility.o adc.o motors.o behaviors.o leds.o sensors.o eepromIO.o irCommunication.o elisaComm.o demoComm.o movement.o pathing.o 
+OBJECTS = main.o spi.o mirf.o ir_remote_control.o speed_control.o variables.o ports_io.o twimaster.o usart.o utility.o adc.o motors.o behaviors.o leds.o sensors.o eepromIO.o irCommunication.o elisaComm.o demoComm.o movement.o pathing.o gridNavigation.o 
 
 ## Objects explicitly added by the user
 LINKONLYOBJECTS = 
@@ -108,6 +108,9 @@ movement.o: ../movement.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 pathing.o: ../pathing.c
+	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
+
+gridNavigation.o: ../gridNavigation.c
 	$(CC) $(INCLUDES) $(CFLAGS) -c  $<
 
 ##Link

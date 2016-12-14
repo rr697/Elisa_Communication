@@ -13,6 +13,9 @@
 #include "motors.h"
 #include "elisaComm.h"
 #include "demoComm.h"
+#include "movement.h"
+#include "pathing.h"
+#include "gridNavigation.h"
 
 int main(void) {
 
@@ -29,12 +32,14 @@ int main(void) {
 	GREEN_LED6_OFF;
 	GREEN_LED7_OFF; 
 
-   
+   	
 
 	while(1) {
 
 	//elisa_communication();
     demoComm();
+	//getMap();
+	//gridNavigation();
 
 	} 
 	

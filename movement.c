@@ -2,8 +2,8 @@
 #include "movement.h"
 
 /*----variables for file-----*/
-static uint16_t turn90count = 26500; //nonmagnetic surface counter
-//static uint16_t gridMoveCount = 33000;
+static uint16_t turn90count = 1280; //nonmagnetic surface counter
+//static uint16_t gridMoveCount = 3300;
 static uint16_t gridEdgeThresh = 540; 
 
 /*temporary local variables for counting */
